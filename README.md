@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# React + TypeScript - Calendar Widget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+- A calendar widget that is created using no external libraries and is completely responsive 
 
-Currently, two official plugins are available:
+## Setup
+- Unzip repository
+- cd to the repository (ex: cd <path/to/repository>)
+- Run: **npm i** OR **npm install**
+- Run: **npm run dev**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- No external libraries used.
+- Custom animations on viewing of calendar widget.
+- Widget contains a calendar where the user can select dates.
+- Widget contains tabs which the user can select and change views.
+- User can select the number of dates they can choose (min is 1 and max is 7 dates). On selecting number of dates, user can select the range of dates.
+- On clicking on apply, the app will display the start and end dates to the console.
+- Responsive (Laptop/Tablet/Mobile).
 
-## Expanding the ESLint configuration
+## Properties / Extensibility
+- You can select year and max months to display. Below we are displaying a calendar with 12 months for the year 2024
+- EX: ```<Calendar counter={counter} maxMonth={12} year={2024} />```
+- You can add new tab items by adding it the Enum and creating a component to display on selection of tab
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
