@@ -28,7 +28,7 @@ const Days = () => {
 			{checkbox && (
 				<div className="calendar-container">
 					<Header checkbox={checkbox} handleCheckbox={handleToggleSwitch} />
-					<Calendar counter={counter} maxMonth={14} year={2024} />
+					<Calendar counter={counter} maxMonth={12} year={2024} />
 				</div>
 			)}
 		</div>
