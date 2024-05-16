@@ -14,7 +14,7 @@
 - Custom animations on viewing of calendar widget.
 - Widget contains a calendar where the user can select dates.
 - Widget contains tabs which the user can select and change views.
-- User can select the number of dates they can choose (min is 1 and max is 7 dates). On selecting number of dates, user can select the range of dates.
+- Users can select the number of dates they can choose (min is 1 and max is 7 dates). On selecting the number of dates, users can select the range of dates.
 - On clicking on apply, the app will display the start and end dates to the console.
 - Responsive (Laptop/Tablet/Mobile).
 
